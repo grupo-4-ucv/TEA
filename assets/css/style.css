@@ -63,8 +63,8 @@ nav .logo img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    margin: 20px 0;
+    padding: 10px;
+    margin: 10px 0;
 }
   
 .text {
@@ -543,4 +543,22 @@ a .fa-brands.fa-whatsapp:hover {
 .additional-logo img {
     height: 80px; /* Ajusta el tamaño del logo */
     width: auto; /* Mantiene las proporciones */
+}
+
+.circle {
+    width: 200px; /* Dimensiones del círculo */
+    height: 200px;
+    border-radius: 50%; /* Hace que sea un círculo */
+    overflow: hidden; /* Recorta cualquier parte de la imagen fuera del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para un efecto más bonito */
+    background-color: rgba(8, 158, 108, 0.712); /* Color de fondo del círculo */
+}
+
+.circle img {
+    width: 100%; /* Asegura que la imagen se ajuste */
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen si no tiene proporción 1:1 */
 }
