@@ -1,0 +1,447 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #AEC6CF;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    margin: 0;
+    flex: 1;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 22px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    color: aliceblue;
+    transform: scale(1.05);
+}
+
+nav .logo {
+    margin-left: auto;
+}
+
+nav .logo img {
+    height: 50px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.main-content {
+    min-height: 100vh; /* Asegura que siempre haya suficiente altura */
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content > .content-d {
+    flex-grow: 1; /* Permite que el contenido ocupe el espacio restante */
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+  
+.text {
+    width: 45%;
+}
+  
+.title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+  
+.body-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.body-text-l li {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+  
+.image-container {
+    width: 45%;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+/* Lado Derecho */
+
+/* Contenedor Principal */
+.content-d {
+    display: flex; /* Alinear los elementos en fila */
+    flex-direction: column;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 40px; /* Espacio entre texto e imagen */
+    height: 100vh; /* Usar toda la altura de la pantalla */
+    padding: 0 20px; /* Espaciado opcional en los bordes */
+    box-sizing: border-box; /* Incluir padding en el tamaño total */
+}
+
+/* Contenedor de Texto */
+.text-d {
+    text-align: center; /* Centrar texto horizontalmente */
+    max-width: 90%; /* Limitar ancho del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+    word-wrap: break-word; /* Permitir ajuste si es necesario */
+}
+
+.text-d .body-text-d {
+    font-size: 26px; /* Ajustar el tamaño del texto */
+}
+
+.text-d .title-d {
+    font-size: 48px; /* Tamaño del título */
+    line-height: 1.2; /* Altura de línea para evitar solapamiento */
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+    .text-d .body-text-d {
+        font-size: 22px; /* Ajustar el tamaño del texto */
+    }
+    .text-d .title-d {
+        font-size: 45px; /* Reducir tamaño en pantallas más pequeñas */
+        margin-top: 280px;
+    }
+
+    .text-a .title-a {
+        font-size: 45px; /* Reducir tamaño en pantallas más pequeñas */
+        margin-top: 200px;
+    }
+}
+
+/* Contenedor de Imagen */
+.image-container-d img {
+    width: 700px; /* Tamaño de la imagen */
+    height: auto; /* Mantener proporciones */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+
+/***********************/
+/* Contenedor Principal */
+.content-a {
+    display: flex; /* Alinear los elementos en fila */
+    flex-direction: column;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 40px; /* Espacio entre texto e imagen */
+    height: 80vh; /* Usar toda la altura de la pantalla */
+    padding: 0 20px; /* Espaciado opcional en los bordes */
+    box-sizing: border-box; /* Incluir padding en el tamaño total */
+}
+
+/* Contenedor de Texto */
+.text-a {
+    text-align: center; /* Centrar texto horizontalmente */
+    max-width: 90%; /* Limitar ancho del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+    word-wrap: break-word; /* Permitir ajuste si es necesario */
+}
+
+.text-a .body-text-a {
+    font-size: 26px; /* Ajustar el tamaño del texto */
+}
+
+.text-a .title-a {
+    font-size: 48px; /* Tamaño del título */
+    line-height: 1.2; /* Altura de línea para evitar solapamiento */
+    font-weight: bold;
+}
+
+/* ******************** */
+
+/* Formulario */
+.form-container {
+    background-color: #44444633; /* Fondo claro */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+  }
+  
+  /* Títulos del formulario */
+.form-container h1 {
+    text-align: center;
+    color: #6c63ff; /* Azul-violeta para reflexionar sobre TEA */
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+  
+  /* Campos del formulario */
+.form-group label {
+    font-weight: bold;
+    color: #333; /* Texto oscuro */
+  }
+  
+.form-group input,
+.form-group select {
+    width: 50p;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #6c63ff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(108, 99, 255, 0.5);
+  }
+  
+  /* Botón de enviar */
+.form-group button {
+    width: 100%;
+    background-color: #6c63ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.form-group button:hover {
+    background-color: #5555ff;
+}
+  
+  /* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .form-container {
+        margin-top: 180px;
+      padding: 50px;
+    }
+  
+    .form-container h1 {
+      font-size: 1.5rem;
+    }
+  }
+/********************************/
+
+a .fa-brands.fa-whatsapp {
+    font-size: 70px;  /* Ajusta el tamaño a lo que necesites */
+    color: #25D366;  /* Color verde de WhatsApp */
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+a .fa-brands.fa-whatsapp:hover {
+    transform: scale(1.1); /* Aumenta un 10% cuando el cursor pasa sobre el ícono */
+}
+
+  
+.fade-image {
+    width: 100%;
+    height: auto;
+}
+  
+.image-container.visible {
+    opacity: 1;
+}
+
+.carrousel {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+}
+  
+.carousel-inner {
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+  
+.carousel-item img {
+    width: 100%;
+    max-width: 100%; 
+    object-fit: contain;
+}
+
+.footer {
+    background-color: #333;
+    color: white; 
+    padding: 40px 20px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media li {
+    margin: 10px 0;
+}
+
+.social-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #AEC6CF;
+}
+
+.footer-menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-menu h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    margin: 10px 0;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: #AEC6CF; 
+}
+
+
+.footer-bottom {
+    width: 100%;
+    background-color: #222; 
+    padding: 10px 0;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-menu, .social-media {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        background-color: #AEC6CF;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul.active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    .close {
+        display: none;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    nav .hamburger.active {
+        display: none; 
+    }
+
+    nav .close.active {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    nav ul {
+        display: flex;
+        
+    }
+
+    .hamburger, .close {
+        display: none;
+    }
+}
