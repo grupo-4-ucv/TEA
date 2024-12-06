@@ -533,3 +533,14 @@ a .fa-brands.fa-whatsapp:hover {
     line-height: 1.8; /* Espaciado entre líneas */
     max-width: 800px; /* Limita el ancho del texto */
 }
+
+.additional-logo {
+    position: inline-block; /* Asegura su ubicación independiente */
+    margin-right: 20px;
+    vertical-align: middle; 
+}
+
+.additional-logo img {
+    height: 80px; /* Ajusta el tamaño del logo */
+    width: auto; /* Mantiene las proporciones */
+}
