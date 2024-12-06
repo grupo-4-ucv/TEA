@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const visitCounter = document.getElementById("visit-counter");
 
     // Cargar visitas almacenadas
-    let visits = localStorage.getItem("pageVisits") || 0;
+    let visits = localStorage.getItem("pageVisits") || 120;
 
     // Convertir el valor a un número entero
     visits = parseInt(visits) + 1;
