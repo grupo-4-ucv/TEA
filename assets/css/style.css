@@ -263,6 +263,58 @@ a .fa-brands.fa-whatsapp:hover {
     transform: scale(1.1); /* Aumenta un 10% cuando el cursor pasa sobre el ícono */
 }
 
+.stats-container {
+    text-align: center; /* Asegura que el texto dentro esté centrado */
+    margin: 40px 20px; /* Espaciado alrededor del contenedor */
+    display: flex; /* Habilita flexbox */
+    flex-direction: column; /* Organiza en columna (título y estadísticas) */
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+
+.stats-title {
+    font-size: 2rem; /* Tamaño del título */
+    color: #6c63ff; /* Azul-violeta relacionado con el TEA */
+    margin-bottom: 20px; /* Espaciado entre el título y las estadísticas */
+    font-weight: bold; /* Hace el título más destacado */
+    text-align: center; /* Centra el texto */
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+.stat:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    font-size: 2.5rem;
+    color: #5a67d8;
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.stat-description {
+    font-size: 0.9rem;
+    color: #666;
+}
   
 .fade-image {
     width: 100%;
@@ -444,4 +496,40 @@ a .fa-brands.fa-whatsapp:hover {
     .hamburger, .close {
         display: none;
     }
+}
+
+.icon-large {
+    font-size: 3rem; /* Ajusta este tamaño según lo necesites */
+    color: #6c63ff; /* Opcional: Cambia el color si lo deseas */
+    transition: transform 0.3s ease; /* Efecto suave */
+}
+
+.icon-large:hover {
+    transform: scale(1.2); /* Aumenta el tamaño un 20% al pasar el cursor */
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column; /* Organiza título y texto en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    padding: 40px 20px; /* Espaciado alrededor del contenido */
+    background-color: #f9f9f9; /* Fondo suave para destacar */
+    margin: 40px 0; /* Espaciado externo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+.info-title {
+    font-size: 2rem; /* Tamaño del título */
+    color: #6c63ff; /* Azul violeta que refleja el tema */
+    margin-bottom: 20px; /* Espaciado con el texto */
+}
+
+.info-text {
+    font-size: 1.2rem; /* Tamaño del texto */
+    color: #333; /* Color de texto oscuro para legibilidad */
+    line-height: 1.8; /* Espaciado entre líneas */
+    max-width: 800px; /* Limita el ancho del texto */
 }

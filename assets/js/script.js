@@ -28,3 +28,15 @@ window.addEventListener("scroll", function(){
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const visitCounter = document.getElementById("visit-counter");
+
+    // Cargar visitas almacenadas
+    let visits = localStorage.getItem("pageVisits") || 0;
+    visits = parseInt(visits) + 1;
+    localStorage.setItem("pageVisits", visits);
+
+    // Actualizar el contador en la página
+    visitCounter.textContent = visits;
+});
