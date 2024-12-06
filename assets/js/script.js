@@ -34,7 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Cargar visitas almacenadas
     let visits = localStorage.getItem("pageVisits") || 0;
+
+    // Convertir el valor a un número entero
     visits = parseInt(visits) + 1;
+
+    // Guardar el nuevo número de visitas en LocalStorage
     localStorage.setItem("pageVisits", visits);
 
     // Actualizar el contador en la página
